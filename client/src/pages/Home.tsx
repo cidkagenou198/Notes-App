@@ -1,10 +1,9 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Plus, StickyNote, Cloud, Shield, Zap } from "lucide-react";
+import { Plus, Cloud, Shield, Zap } from "lucide-react";
 
 import Notes from "@/components/notes/Notes";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Heading from "@/components/ui/heading";
 
 const Home = () => {
