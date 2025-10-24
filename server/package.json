@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "build": "echo 'No build step required for server'",
     "start": "node index.js"
   },
   "author": "Dhawal Vijayvargiya",
@@ -12,7 +13,6 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dev_notes": "file:..",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "express-validator": "^6.14.2",

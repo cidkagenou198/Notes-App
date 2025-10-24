@@ -12,7 +12,7 @@
     "dev": "concurrently \"pnpm dev:server\" \"pnpm dev:client\"",
     "build:client": "cd client && pnpm install --no-frozen-lockfile && pnpm build",
     "build:server": "cd server && pnpm install --production --frozen-lockfile",
-    "build": "pnpm build:client && pnpm build:server",
+    "build": "pnpm build:server",
     "start": "cd server && pnpm start",
     "preview:client": "cd client && pnpm build && pnpm start --port 3000",
     "preview:server": "cd server && pnpm start",
