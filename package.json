@@ -4,14 +4,14 @@
   "description": "",
   "scripts": {
     "prebuild": "pnpm install",
-    "init:server": "cd server && pnpm i",
-    "init:client": "cd client && pnpm i",
+    "init:server": "cd server && pnpm install",
+    "init:client": "cd client && pnpm install",
     "init:both": "concurrently \"pnpm init:server\" \"pnpm init:client\"",
     "dev:server": "cd server && pnpm dev",
     "dev:client": "cd client && pnpm dev",
     "dev": "concurrently \"pnpm dev:server\" \"pnpm dev:client\"",
     "build:client": "cd client && pnpm install --no-frozen-lockfile && pnpm build",
-    "build:server": "cd server && pnpm install --production --frozen-lockfile",
+    "build:server": "cd server && pnpm install --no-frozen-lockfile && pnpm run build",
     "build": "pnpm build:server",
     "start": "cd server && pnpm start",
     "preview:client": "cd client && pnpm build && pnpm start --port 3000",
@@ -22,6 +22,7 @@
   "author": "Saicharan kaparthi",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "mongoose": "^7.5.0"
   }
 }
